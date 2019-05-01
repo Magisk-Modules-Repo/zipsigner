@@ -40,6 +40,11 @@ mount -o ro /system;
 mount /data;
 mount /cache;
 test -f /system/system/build.prop && root=/system;
+API=$(cat $root/system/build.prop | grep "ro.build.version.sdk=" | dd bs=1 skip=21 count=2)
+if [ "$API" -eq "$API" ] && [ "$API" -lt "21" ]; then
+  ui_print "ZipSigner will not work in <5.0 android"
+  exit 1
+fi
 
 # Magisk clean flash support
 if [ -e /data/$adb/magisk -a ! -e /data/$adb/magisk.img -a ! -e /data/adb/modules ]; then
