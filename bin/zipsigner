@@ -2,7 +2,14 @@
 # zipsigner: wrapper to run zipsigner.jar from terminal
 # osm0sis @ xda-developers
 
-dir="$(cd "$(dirname "$0")"; pwd)";
+getdir() {
+  case "$1" in
+    */*) dir=${1%/*}; [ -z $dir ] && echo "/" || echo $dir ;;
+    *) echo "." ;;
+  esac
+}
+
+dir="$(cd "$(getdir "$0")"; echo "$PWD")";
 
 dalvikvm -Djava.io.tmpdir=. -Xnodex2oat -Xnoimage-dex2oat -cp $dir/zipsigner-*.jar com.topjohnwu.utils.ZipSigner "$@";
 
