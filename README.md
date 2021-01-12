@@ -6,7 +6,7 @@
 * [GitHub](https://github.com/Magisk-Modules-Repo/zipsigner)
 * [Support](https://forum.xda-developers.com/showthread.php?t=2239421)
 * [Sponsor](https://github.com/sponsors/osm0sis)
-* [Donate](https://forum.xda-developers.com/donatetome.php?u=4544860)
+* [Donate](https://www.paypal.me/osm0sis)
 
 ### Description
 A simple installer to push a dexed version of zipsigner.jar, and static compiles of zip and zipalign to /system/xbin along with a wrapper to handle invoking zipsigner with dalvikvm. Detects and supports "systemless" install via SuperSU/Magisk as well. It can then be used from Terminal while booted from that point on.
