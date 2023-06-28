@@ -4,7 +4,7 @@
 
 ### Links
 * [GitHub](https://github.com/Magisk-Modules-Repo/zipsigner)
-* [Support](https://bit.do/osm0)
+* [Support](https://is.gd/osm0_)
 * [Sponsor](https://github.com/sponsors/osm0sis)
 * [Donate](https://www.paypal.me/osm0sis)
 
