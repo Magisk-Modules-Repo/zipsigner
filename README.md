@@ -1,6 +1,6 @@
-## ZipSigner & Zip for Android NDK
+## Zip & ZipSigner for Android NDK
 ### osm0sis & topjohnwu @ xda-developers
-*Wrapped dexed zipsigner.jar, and static ARM zip and zipalign binaries for Android built with the NDK*
+*Wrapped dexed zipsigner.jar, and static arm/arm64 zip and zipalign binaries for Android built with the NDK*
 
 ### Links
 * [GitHub](https://github.com/Magisk-Modules-Repo/zipsigner)

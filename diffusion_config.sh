@@ -22,8 +22,16 @@ custom_target() {
 custom_install() {
   ui_print " ";
   ui_print "Installing to $BIN ...";
-  set_perm 0 0 755 $BIN/zipsigner $BIN/zip $BIN/zipalign;
+  set_perm 0 0 755 $BIN/zip*;
   set_perm 0 0 644 $BIN/zipsigner*.jar;
+  if $BIN/zip-arm64 -v >/dev/null; then
+    mv -f $BIN/zip-arm64 $BIN/zip;
+    mv -f $BIN/zipalign-arm64 $BIN/zipalign;
+  else
+    mv -f $BIN/zip-arm $BIN/zip;
+    mv -f $BIN/zipalign-arm $BIN/zipalign;
+  fi;
+  rm -f $BIN/zip-arm* $BIN/zipalign-arm*;
 }
 
 custom_postinstall() {
