@@ -1,7 +1,7 @@
 id=zipsigner
 name=Zip & ZipSigner for Android NDK
 version=3.0-13
-versionCode=301302
+versionCode=301303
 author=osm0sis & topjohnwu @ xda-developers
 description=Wrapped dexed zipsigner.jar, and static arm/arm64 zip and zipalign binaries for Android built with the NDK
 updateJson=https://raw.githubusercontent.com/Magisk-Modules-Repo/zipsigner/master/update.json
