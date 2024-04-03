@@ -23,7 +23,7 @@ custom_install() {
   ui_print " ";
   set_perm 0 0 755 $BIN/zip*;
   set_perm 0 0 644 $BIN/zipsigner*.jar;
-  if $BIN/zip-arm64 -v >/dev/null; then
+  if $BIN/zip-arm64 -v >/dev/null 2>&1; then
     ui_print "Installing (arm64) to $BIN ...";
     mv -f $BIN/zip-arm64 $BIN/zip;
     mv -f $BIN/zipalign-arm64 $BIN/zipalign;
