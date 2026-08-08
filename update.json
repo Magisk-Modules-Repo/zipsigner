@@ -1,6 +1,6 @@
 {
     "version": "3.0-13",
     "versionCode": "301304",
-    "zipUrl": "https://xdaforums.com/attachments/update-zipsigner-installer-v3-0-13-signed-zip.6087451/",
+    "zipUrl": "https://github.com/Magisk-Modules-Repo/zipsigner/releases/download/301304/UPDATE-ZipSigner.Installer.v3.0-13-signed.zip",
     "changelog": "https://raw.githubusercontent.com/Magisk-Modules-Repo/zipsigner/master/README.md"
 }
